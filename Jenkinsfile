@@ -1,17 +1,18 @@
 pipeline {
   agent any
   stages {
-    stage('Test') {
+    stage('Environment') {
       steps {
-        echo 'Test'
+        echo 'deploy docker'
+        sh 'docker '
       }
     }
-    stage('Check') {
+    stage('Test') {
       steps {
         echo 'bbbbbb'
       }
     }
-    stage('Delivery') {
+    stage('Deploy') {
       steps {
         echo 'fdsafadfadf'
       }
