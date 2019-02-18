@@ -6,5 +6,15 @@ pipeline {
         echo 'Test'
       }
     }
+    stage('Check') {
+      steps {
+        echo 'bbbbbb'
+      }
+    }
+    stage('Delivery') {
+      steps {
+        echo 'fdsafadfadf'
+      }
+    }
   }
 }
